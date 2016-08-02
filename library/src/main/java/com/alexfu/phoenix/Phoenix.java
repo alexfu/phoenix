@@ -13,21 +13,21 @@ public class Phoenix {
     void onUpdate(int oldVersion, int newVersion);
   }
 
-  public static void rise(Context context, Callback callback) {
-    SharedPreferences preferences = getPreferences(context);
+  public static <T extends Context & Callback> void rise(T activity) {
+        SharedPreferences preferences = getPreferences(activity);
 
-    int lastVersionCode = preferences.getInt(KEY_LAST_VERSION_CODE, -1);
-    int currentVersionCode = getVersionCode(context);
+        int lastVersionCode = preferences.getInt(KEY_LAST_VERSION_CODE, -1);
+        int currentVersionCode = getVersionCode(activity);
 
-    if (currentVersionCode != lastVersionCode) {
-      if (lastVersionCode != -1 && callback != null) {
-        callback.onUpdate(lastVersionCode, currentVersionCode);
-      }
-      preferences.edit()
-          .putInt(KEY_LAST_VERSION_CODE, currentVersionCode)
-          .apply();
+        if (currentVersionCode != lastVersionCode) {
+            if (lastVersionCode != -1 && activity != null) {
+                activity.onUpdate(lastVersionCode, currentVersionCode);
+            }
+            preferences.edit()
+                    .putInt(KEY_LAST_VERSION_CODE, currentVersionCode)
+                    .apply();
+        }
     }
-  }
 
   private static SharedPreferences getPreferences(Context context) {
     return context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
