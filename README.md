@@ -18,3 +18,17 @@ public MyApplication extends Application implements Phoenix.Callback {
   }
 }
 ```
+
+# Installation
+
+```groovy
+buildscript {
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
+}
+
+dependencies {
+  compile 'com.github.alexfu:Phoenix:0.1'
+}
+```
