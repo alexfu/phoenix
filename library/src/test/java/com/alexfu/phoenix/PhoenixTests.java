@@ -69,7 +69,7 @@ public final class PhoenixTests {
     Phoenix.rise(activity, callback);
 
     // Verify
-    Mockito.verify(callback, times(1)).onUpdate(anyInt(), anyInt());
+    Mockito.verify(callback, times(1)).onUpdate(eq(1), eq(2));
   }
 
   @Test
@@ -83,6 +83,6 @@ public final class PhoenixTests {
     Phoenix.rise(activity, null);
 
     // Verify
-    Mockito.verify(callback, never()).onUpdate(anyInt(), anyInt());
+    Mockito.verify(callback, never()).onUpdate(eq(1), eq(2));
   }
 }
