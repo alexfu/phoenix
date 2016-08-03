@@ -3,4 +3,5 @@ jdk:
   - oraclejdk8
 android:
   licenses:
+    - 'android-sdk-preview-license.+'
     - 'android-sdk-license-.+'
