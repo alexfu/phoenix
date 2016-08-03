@@ -1,3 +1,6 @@
 language: android
 jdk:
   - oraclejdk8
+android:
+  licenses:
+    - 'android-sdk-license-.+'
