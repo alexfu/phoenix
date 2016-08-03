@@ -10,3 +10,4 @@ android:
   licenses:
     - 'android-sdk-preview-license.+'
     - 'android-sdk-license-.+'
+script: ./gradlew clean check
