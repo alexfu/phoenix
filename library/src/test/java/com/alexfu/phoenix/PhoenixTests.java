@@ -16,6 +16,7 @@ import org.robolectric.annotation.Config;
 import static android.content.Context.MODE_PRIVATE;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -46,7 +47,7 @@ public final class PhoenixTests {
   }
 
   @Test
-  public void doesNotTriggerOnUpdateWithFirstCall() {
+  public void doesTriggerOnUpdateOnColdStart() {
     // Arrange
     packageInfo.versionCode = 1;
 
@@ -54,7 +55,7 @@ public final class PhoenixTests {
     Phoenix.rise(activity, callback);
 
     // Verify
-    Mockito.verify(callback, never()).onUpdate(anyInt(), anyInt());
+    Mockito.verify(callback, times(1)).onUpdate(eq(-1), eq(1));
   }
 
   @Test

@@ -20,7 +20,7 @@ public class Phoenix {
     int currentVersionCode = getVersionCode(context);
 
     if (currentVersionCode != lastVersionCode) {
-      if (lastVersionCode != -1 && callback != null) {
+      if (callback != null) {
         callback.onUpdate(lastVersionCode, currentVersionCode);
       }
       preferences.edit()
