@@ -29,6 +29,6 @@ buildscript {
 }
 
 dependencies {
-  compile 'com.github.alexfu:Phoenix:0.1'
+  compile 'com.github.alexfu:Phoenix:0.2.1'
 }
 ```
