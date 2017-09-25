@@ -1,21 +1,37 @@
 # Change Log
 
+## [1.0.0](https://github.com/alexfu/Phoenix/tree/1.0.0) (2017-09-25)
+[Full Changelog](https://github.com/alexfu/Phoenix/compare/0.2.1...1.0.0)
+
+**Implemented enhancements:**
+
+- Changelog [\#5](https://github.com/alexfu/phoenix/issues/5)
+
+**Closed issues:**
+
+- Wrong gradle version in the Readme [\#9](https://github.com/alexfu/phoenix/issues/9)
+
+**Merged pull requests:**
+
+- Updates Phoenix to be async [\#10](https://github.com/alexfu/phoenix/pull/10) ([alexfu](https://github.com/alexfu))
+- Changelog [\#8](https://github.com/alexfu/phoenix/pull/8) ([alexfu](https://github.com/alexfu))
+
 ## [0.2.1](https://github.com/alexfu/Phoenix/tree/0.2.1) (2016-08-04)
 [Full Changelog](https://github.com/alexfu/Phoenix/compare/0.2...0.2.1)
 
 **Fixed bugs:**
 
-- Handle existing apps [\#6](https://github.com/alexfu/Phoenix/issues/6)
+- Handle existing apps [\#6](https://github.com/alexfu/phoenix/issues/6)
 
 **Closed issues:**
 
-- The triggersOnUpdate test should verify specific values [\#1](https://github.com/alexfu/Phoenix/issues/1)
+- The triggersOnUpdate test should verify specific values [\#1](https://github.com/alexfu/phoenix/issues/1)
 
 **Merged pull requests:**
 
-- Handle existing apps [\#7](https://github.com/alexfu/Phoenix/pull/7) ([alexfu](https://github.com/alexfu))
-- Add TravisCI [\#4](https://github.com/alexfu/Phoenix/pull/4) ([alexfu](https://github.com/alexfu))
-- Verify specific values in tests [\#3](https://github.com/alexfu/Phoenix/pull/3) ([alexfu](https://github.com/alexfu))
+- Handle existing apps [\#7](https://github.com/alexfu/phoenix/pull/7) ([alexfu](https://github.com/alexfu))
+- Add TravisCI [\#4](https://github.com/alexfu/phoenix/pull/4) ([alexfu](https://github.com/alexfu))
+- Verify specific values in tests [\#3](https://github.com/alexfu/phoenix/pull/3) ([alexfu](https://github.com/alexfu))
 
 ## [0.2](https://github.com/alexfu/Phoenix/tree/0.2) (2016-08-02)
 [Full Changelog](https://github.com/alexfu/Phoenix/compare/0.1...0.2)
