@@ -33,7 +33,9 @@ class UpdateAsyncTask extends AsyncTask<Void, Void, VersionHistory> {
             preferences.edit()
                     .putInt(KEY_LAST_VERSION_CODE, newVersion)
                     .apply();
-            callback.onUpdate(oldVersion, newVersion);
+            if (callback != null) {
+                callback.onUpdate(oldVersion, newVersion);
+            }
         }
     }
 
