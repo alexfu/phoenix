@@ -1,6 +1,8 @@
 # Phoenix
 
-Phoenix is a very small library (45 LOC) that offers update hooks for when a user updates your app. This is useful for when you need to handle some logic when updating from version to version.
+Phoenix is a small library that offers update hooks for when a user updates your app. This is useful for when you need to handle some logic when updating from version to version.
+
+**NOTE**: Since v1.0.0, Phoenix operates asynchronously, however, `Phoenix.Callback` is still executed on the main thread.
 
 # Usage
 
@@ -29,6 +31,6 @@ buildscript {
 }
 
 dependencies {
-  compile 'com.github.alexfu:Phoenix:0.2.1'
+  compile 'com.github.alexfu:Phoenix:1.0.0'
 }
 ```
